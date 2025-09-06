@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # YOLOv8 Object Detection on UA-DETRAC Dataset
 
 This project implements vehicle detection using YOLOv8 on the UA-DETRAC dataset, which contains challenging real-world traffic video sequences:cite[4].
@@ -47,3 +48,6 @@ pip install -r requirements.txt
 Download the UA-DETRAC dataset from Kaggle and place it in the appropriate directory.
 
 
+=======
+# Traffic-Multi-Object-Detection-and-Tracking
+>>>>>>> 1a373240e5ff9185b4200a1b349af81b8d88b778

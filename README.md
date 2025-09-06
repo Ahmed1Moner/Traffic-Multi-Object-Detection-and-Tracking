@@ -1,53 +1,69 @@
-<<<<<<< HEAD
-# YOLOv8 Object Detection on UA-DETRAC Dataset
+# 🚗 Traffic Multi-Object Detection and Tracking with YOLOv8
 
-This project implements vehicle detection using YOLOv8 on the UA-DETRAC dataset, which contains challenging real-world traffic video sequences:cite[4].
+This project implements **multi-object vehicle detection and tracking** using [YOLOv8](https://github.com/ultralytics/ultralytics) on the [UA-DETRAC dataset](https://www.kaggle.com/datasets/bratjay/ua-detrac-orig).  
+The UA-DETRAC benchmark provides a challenging real-world traffic surveillance dataset captured in multiple urban scenarios, making it suitable for testing object detection and tracking models.
 
-## 📊 Dataset
+---
 
-The UA-DETRAC dataset contains approximately 10 hours of videos captured with a Canon EOS 550D camera at 24 different locations in Beijing and Tianjin, China. The dataset includes about 140,000 frames with rich annotations.
+## 📊 Dataset: UA-DETRAC
 
-**Dataset Source**: [UA-DETRAC on Kaggle](https://www.kaggle.com/datasets/bratjay/ua-detrac-orig)
+The **UA-DETRAC dataset** is a large-scale benchmark for object detection and tracking in traffic surveillance. It includes:
+
+- ~10 hours of video footage recorded at **24 different locations** in Beijing and Tianjin, China.
+- Captured using a **Canon EOS 550D camera**.
+- ~140,000 manually annotated frames.
+- Four main vehicle categories: **car, bus, van, and others**.
+- Challenging conditions such as **occlusion, weather variation, and illumination changes**.
+
+👉 [UA-DETRAC Dataset on Kaggle](https://www.kaggle.com/datasets/bratjay/ua-detrac-orig)
+
+---
 
 ## 🏗️ Project Structure
+
 yolov8-ua-detrac/
 ├── config/
 │ ├── init.py
-│ └── config.py
+│ └── config.py # Configurations (paths, hyperparameters, etc.)
 ├── data/
 │ ├── init.py
-│ └── data_loader.py
+│ └── data_loader.py # Data loading and preprocessing
 ├── models/
 │ ├── init.py
-│ └── model.py
+│ └── model.py # YOLOv8 model handling
 ├── training/
 │ ├── init.py
-│ └── train.py
+│ └── train.py # Training script
 ├── utils/
 │ ├── init.py
-│ ├── visualization.py
-│ └── helpers.py
-├── plots/
-├── runs/
+│ ├── visualization.py # Visualization tools for results
+│ └── helpers.py # Helper functions
+├── plots/ # Generated plots (metrics, training curves, etc.)
+├── runs/ # Model checkpoints and logs
 ├── requirements.txt
 └── README.md
 
 
+---
+
 ## 🚀 Quick Start
 
-### Installation
-
-1. Clone the repository:
-```bash
-git clone <repository-url>
-cd yolov8-ua-detrac
-
-Install dependencies:
-pip install -r requirements.txt
-
-Download the UA-DETRAC dataset from Kaggle and place it in the appropriate directory.
+1. Clone Repository
+2. Install Dependencies
+3. Download Dataset
+4. Train the Model
+5. Evaluate / Inference
 
 
-=======
-# Traffic-Multi-Object-Detection-and-Tracking
->>>>>>> 1a373240e5ff9185b4200a1b349af81b8d88b778
+Results
+
+Training Metrics: Precision, Recall, mAP (mean Average Precision).
+Tracking Performance: Multiple Object Tracking Accuracy (MOTA) and ID switches.
+Example detection results are saved under plots/ and runs/.
+
+Requirements
+
+Python 3.8+
+PyTorch (>=1.8)
+YOLOv8 (Ultralytics)
+Other dependencies:

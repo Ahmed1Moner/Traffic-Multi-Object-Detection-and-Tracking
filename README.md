@@ -19,33 +19,6 @@ The **UA-DETRAC dataset** is a large-scale benchmark for object detection and tr
 
 ---
 
-## 🏗️ Project Structure
-
-yolov8-ua-detrac/
-├── config/
-│ ├── init.py
-│ └── config.py # Configurations (paths, hyperparameters, etc.)
-├── data/
-│ ├── init.py
-│ └── data_loader.py # Data loading and preprocessing
-├── models/
-│ ├── init.py
-│ └── model.py # YOLOv8 model handling
-├── training/
-│ ├── init.py
-│ └── train.py # Training script
-├── utils/
-│ ├── init.py
-│ ├── visualization.py # Visualization tools for results
-│ └── helpers.py # Helper functions
-├── plots/ # Generated plots (metrics, training curves, etc.)
-├── runs/ # Model checkpoints and logs
-├── requirements.txt
-└── README.md
-
-
----
-
 ## 🚀 Quick Start
 
 1. Clone Repository

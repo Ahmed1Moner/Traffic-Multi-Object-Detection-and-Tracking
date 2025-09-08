@@ -1,4 +1,5 @@
-# 🚗 Traffic Multi-Object Detection and Tracking with YOLOv8
+# 🚗 Traffic Multi-Object Detection and Tracking
+(This's a very simple code & Detailed code version not published yet [Sept. 7 2025], hoping by next week [still running])
 
 This project implements **multi-object vehicle detection and tracking** using [YOLOv8](https://github.com/ultralytics/ultralytics) on the [UA-DETRAC dataset](https://www.kaggle.com/datasets/bratjay/ua-detrac-orig).  
 The UA-DETRAC benchmark provides a challenging real-world traffic surveillance dataset captured in multiple urban scenarios, making it suitable for testing object detection and tracking models.
